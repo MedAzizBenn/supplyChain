@@ -1,0 +1,23 @@
+.navbar{
+    width: 100%;
+    min-height: 6vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .7s ease-in;
+    height:100px;
+  }
+  //IMPORTANT
+  .scrolled{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: lightblue;
+  }
+  .logo img{
+    width: 50px;
+  }
+  .navigation{
+      //your navigation styles
+  }

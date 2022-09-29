@@ -1,0 +1,48 @@
+
+.trace .inline {  
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+
+  }
+  
+.trace .card
+{
+    text-align: center;
+    width:800px;
+    height:400px;
+    margin: 0 auto; 
+        float: none; 
+        margin-bottom: 10px; 
+        line-height: 200%;
+}
+.trace .card-title
+{
+    color:#DA0037;
+}
+
+.trace .code
+{
+    width:20rem;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+         border-radius: 0 !important;
+         margin-left: 20%;
+
+
+}
+
+.trace .btn
+{
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+         border-radius: 0 !important;
+         background-color: #DA0037;
+         color:#EDEDED;
+}
+.trace .btn:hover
+{
+    color:#DA0037;
+    background-color: #EDEDED;
+
+}

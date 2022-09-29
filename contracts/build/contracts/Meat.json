@@ -1,0 +1,2205 @@
+{
+  "contractName": "Meat",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/SupplyChain/Meat.sol\":\"Meat\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/SupplyChain/Meat.sol\":{\"keccak256\":\"0xb56b5d16f7ad3a44d708963a5dad42f34a84a5303e929656b11016d41ebcfa74\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c1d3fab491fc926577e6aba0f19ce05938f07d8ed9db1b617005dcc45cdcaa58\",\"dweb:/ipfs/QmcK7YyZppCPbYYT52NbtFPjR1RfMneQRm6mt1kQCThdHF\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220d6399add3d5f1b6626107db69e2a06353e6c860811df707a7cceae616def872e64736f6c634300080c0033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220d6399add3d5f1b6626107db69e2a06353e6c860811df707a7cceae616def872e64736f6c634300080c0033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "66:2335:6:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "66:2335:6:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Meat {\n\n      struct meat\n    {\n      Animal source;\n      Fodder fodder;\n      Part part;\n        }\n\n     enum Animal\n    {\n     Beef,\n     Lamb,\n     pork,\n     veal,\n     goat,\n     wagyu,\n     sheep\n    }   \n\n    enum Fodder\n    {\n      Grassfed,\n      Grainfed\n    }\n    \n     struct Part\n     {\n         CHUCK chuck;\n         BRISKET brisket;\n         SHANK shank;\n         RIB rib;\n         PLATE plate;\n         SHORT_LOIN shortLoin;\n         SIR_LOIN sirLoin;\n         FLANK flank;\n         ROUND round;\n     }\n     enum CHUCK\n     {\n        Flat_Iron,\n        Top_Blade_Steak,\n        Chuck_Roast,\n        Chuck_Arm_Roast,\n        Mock_Tender_Steak,\n        Mock_Tender,\n        Clod_Heart,\n        Ranch_Steak,\n        Petite_Tender,\n        Shoulder_Tender_Medallions,\n        Cross_Rib_Roast,\n        Sierra_Steak,\n        Denver_Steak,   \n        Boneless_Country_Style_Ribs,\n        Bone_In_Chuck_Short_Ribs,\n        Chuck_Eye_Steak\n     }\n     enum RIB\n     {\n        Ribeye,\n        Bone_in_Rib_Roast,\n        Rib_Filet,\n        Ribeye_Roast,\n        Cowboy_Steak,\n        Bone_in_Ribeye,\n        Bone_in_Plate_Short_Ribs,\n        Back_Ribs,\n        Chef_Cut_Ribeye\n     }\n\n     enum SHORT_LOIN\n     {\n        Boneless_Strip_Steak,\n        Strip_Filet,\n        Strip_Roast,\n        Tenderloin_Roast,\n        T_Bone,\n        Porterhouse,\n        Filet_Mignon,\n        Hanger_Steak\n     }\n\n     enum SIR_LOIN\n     {\n        Center_Cut_Sirloin_Steak,\n        Top_Sirloin_Steak,\n        Coulotte_Steak,\n        Sirloin_Filet,\n        Tri_Tip_Steak,\n        Tri_Tip,\n        Ball_Tip_Steak,\n        Ball_Tip,\n        Sirloin_Flap\n     }\n\n    enum ROUND\n    {\n        Rump_Roast,\n        Top_Round_London_Broil,\n        Top_Round_Roast,\n        Top_Round_Steak,\n        Bottom_Round_Steak,\n        Bottom_Round_London_Broil,\n        Bottom_Round_Roast,\n        Eye_of_Round_Roast,\n        Eye_of_Round_Steak,\n        Sirloin_Tip_Center_Roast,\n        Sirloin_Tip_Center_Steak,\n        Sirloin_Tip_Side_Steak,\n        Butterfly_Top_Round_Steak\n\n    }\n\n    enum FLANK\n    {\n        flank\n    }\n    enum PLATE\n    {\n        Short_Ribs,\n        Inside_Skirt\n    }\n\n    enum BRISKET\n    {\n        Whole_Brisket,\n        Brisket_Flat,\n        Brisket_Point\n    }\n\n    enum SHANK\n    {\n        Shank_Cross_Cut\n    }\n  \n\n\n}",
+  "sourcePath": "/home/crawzer/blockchain/front/my-app/contracts/contracts/SupplyChain/Meat.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/SupplyChain/Meat.sol",
+    "exportedSymbols": {
+      "Meat": [
+        719
+      ]
+    },
+    "id": 720,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 598,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:32:6"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Meat",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 719,
+        "linearizedBaseContracts": [
+          719
+        ],
+        "name": "Meat",
+        "nameLocation": "75:4:6",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Meat.meat",
+            "id": 608,
+            "members": [
+              {
+                "constant": false,
+                "id": 601,
+                "mutability": "mutable",
+                "name": "source",
+                "nameLocation": "120:6:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 608,
+                "src": "113:13:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_Animal_$616",
+                  "typeString": "enum Meat.Animal"
+                },
+                "typeName": {
+                  "id": 600,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 599,
+                    "name": "Animal",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 616,
+                    "src": "113:6:6"
+                  },
+                  "referencedDeclaration": 616,
+                  "src": "113:6:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Animal_$616",
+                    "typeString": "enum Meat.Animal"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 604,
+                "mutability": "mutable",
+                "name": "fodder",
+                "nameLocation": "141:6:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 608,
+                "src": "134:13:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_Fodder_$619",
+                  "typeString": "enum Meat.Fodder"
+                },
+                "typeName": {
+                  "id": 603,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 602,
+                    "name": "Fodder",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 619,
+                    "src": "134:6:6"
+                  },
+                  "referencedDeclaration": 619,
+                  "src": "134:6:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Fodder_$619",
+                    "typeString": "enum Meat.Fodder"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 607,
+                "mutability": "mutable",
+                "name": "part",
+                "nameLocation": "160:4:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 608,
+                "src": "155:9:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Part_$647_storage_ptr",
+                  "typeString": "struct Meat.Part"
+                },
+                "typeName": {
+                  "id": 606,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 605,
+                    "name": "Part",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 647,
+                    "src": "155:4:6"
+                  },
+                  "referencedDeclaration": 647,
+                  "src": "155:4:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Part_$647_storage_ptr",
+                    "typeString": "struct Meat.Part"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "meat",
+            "nameLocation": "96:4:6",
+            "nodeType": "StructDefinition",
+            "scope": 719,
+            "src": "89:86:6",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Meat.Animal",
+            "id": 616,
+            "members": [
+              {
+                "id": 609,
+                "name": "Beef",
+                "nameLocation": "205:4:6",
+                "nodeType": "EnumValue",
+                "src": "205:4:6"
+              },
+              {
+                "id": 610,
+                "name": "Lamb",
+                "nameLocation": "216:4:6",
+                "nodeType": "EnumValue",
+                "src": "216:4:6"
+              },
+              {
+                "id": 611,
+                "name": "pork",
+                "nameLocation": "227:4:6",
+                "nodeType": "EnumValue",
+                "src": "227:4:6"
+              },
+              {
+                "id": 612,
+                "name": "veal",
+                "nameLocation": "238:4:6",
+                "nodeType": "EnumValue",
+                "src": "238:4:6"
+              },
+              {
+                "id": 613,
+                "name": "goat",
+                "nameLocation": "249:4:6",
+                "nodeType": "EnumValue",
+                "src": "249:4:6"
+              },
+              {
+                "id": 614,
+                "name": "wagyu",
+                "nameLocation": "260:5:6",
+                "nodeType": "EnumValue",
+                "src": "260:5:6"
+              },
+              {
+                "id": 615,
+                "name": "sheep",
+                "nameLocation": "272:5:6",
+                "nodeType": "EnumValue",
+                "src": "272:5:6"
+              }
+            ],
+            "name": "Animal",
+            "nameLocation": "187:6:6",
+            "nodeType": "EnumDefinition",
+            "src": "182:101:6"
+          },
+          {
+            "canonicalName": "Meat.Fodder",
+            "id": 619,
+            "members": [
+              {
+                "id": 617,
+                "name": "Grassfed",
+                "nameLocation": "316:8:6",
+                "nodeType": "EnumValue",
+                "src": "316:8:6"
+              },
+              {
+                "id": 618,
+                "name": "Grainfed",
+                "nameLocation": "332:8:6",
+                "nodeType": "EnumValue",
+                "src": "332:8:6"
+              }
+            ],
+            "name": "Fodder",
+            "nameLocation": "297:6:6",
+            "nodeType": "EnumDefinition",
+            "src": "292:54:6"
+          },
+          {
+            "canonicalName": "Meat.Part",
+            "id": 647,
+            "members": [
+              {
+                "constant": false,
+                "id": 622,
+                "mutability": "mutable",
+                "name": "chuck",
+                "nameLocation": "391:5:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 647,
+                "src": "385:11:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_CHUCK_$664",
+                  "typeString": "enum Meat.CHUCK"
+                },
+                "typeName": {
+                  "id": 621,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 620,
+                    "name": "CHUCK",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 664,
+                    "src": "385:5:6"
+                  },
+                  "referencedDeclaration": 664,
+                  "src": "385:5:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_CHUCK_$664",
+                    "typeString": "enum Meat.CHUCK"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 625,
+                "mutability": "mutable",
+                "name": "brisket",
+                "nameLocation": "415:7:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 647,
+                "src": "407:15:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_BRISKET_$716",
+                  "typeString": "enum Meat.BRISKET"
+                },
+                "typeName": {
+                  "id": 624,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 623,
+                    "name": "BRISKET",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 716,
+                    "src": "407:7:6"
+                  },
+                  "referencedDeclaration": 716,
+                  "src": "407:7:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_BRISKET_$716",
+                    "typeString": "enum Meat.BRISKET"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 628,
+                "mutability": "mutable",
+                "name": "shank",
+                "nameLocation": "439:5:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 647,
+                "src": "433:11:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_SHANK_$718",
+                  "typeString": "enum Meat.SHANK"
+                },
+                "typeName": {
+                  "id": 627,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 626,
+                    "name": "SHANK",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 718,
+                    "src": "433:5:6"
+                  },
+                  "referencedDeclaration": 718,
+                  "src": "433:5:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_SHANK_$718",
+                    "typeString": "enum Meat.SHANK"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 631,
+                "mutability": "mutable",
+                "name": "rib",
+                "nameLocation": "459:3:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 647,
+                "src": "455:7:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_RIB_$674",
+                  "typeString": "enum Meat.RIB"
+                },
+                "typeName": {
+                  "id": 630,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 629,
+                    "name": "RIB",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 674,
+                    "src": "455:3:6"
+                  },
+                  "referencedDeclaration": 674,
+                  "src": "455:3:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_RIB_$674",
+                    "typeString": "enum Meat.RIB"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 634,
+                "mutability": "mutable",
+                "name": "plate",
+                "nameLocation": "479:5:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 647,
+                "src": "473:11:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_PLATE_$712",
+                  "typeString": "enum Meat.PLATE"
+                },
+                "typeName": {
+                  "id": 633,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 632,
+                    "name": "PLATE",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 712,
+                    "src": "473:5:6"
+                  },
+                  "referencedDeclaration": 712,
+                  "src": "473:5:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_PLATE_$712",
+                    "typeString": "enum Meat.PLATE"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 637,
+                "mutability": "mutable",
+                "name": "shortLoin",
+                "nameLocation": "506:9:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 647,
+                "src": "495:20:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_SHORT_LOIN_$683",
+                  "typeString": "enum Meat.SHORT_LOIN"
+                },
+                "typeName": {
+                  "id": 636,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 635,
+                    "name": "SHORT_LOIN",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 683,
+                    "src": "495:10:6"
+                  },
+                  "referencedDeclaration": 683,
+                  "src": "495:10:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_SHORT_LOIN_$683",
+                    "typeString": "enum Meat.SHORT_LOIN"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 640,
+                "mutability": "mutable",
+                "name": "sirLoin",
+                "nameLocation": "535:7:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 647,
+                "src": "526:16:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_SIR_LOIN_$693",
+                  "typeString": "enum Meat.SIR_LOIN"
+                },
+                "typeName": {
+                  "id": 639,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 638,
+                    "name": "SIR_LOIN",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 693,
+                    "src": "526:8:6"
+                  },
+                  "referencedDeclaration": 693,
+                  "src": "526:8:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_SIR_LOIN_$693",
+                    "typeString": "enum Meat.SIR_LOIN"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 643,
+                "mutability": "mutable",
+                "name": "flank",
+                "nameLocation": "559:5:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 647,
+                "src": "553:11:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_FLANK_$709",
+                  "typeString": "enum Meat.FLANK"
+                },
+                "typeName": {
+                  "id": 642,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 641,
+                    "name": "FLANK",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 709,
+                    "src": "553:5:6"
+                  },
+                  "referencedDeclaration": 709,
+                  "src": "553:5:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_FLANK_$709",
+                    "typeString": "enum Meat.FLANK"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 646,
+                "mutability": "mutable",
+                "name": "round",
+                "nameLocation": "581:5:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 647,
+                "src": "575:11:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_ROUND_$707",
+                  "typeString": "enum Meat.ROUND"
+                },
+                "typeName": {
+                  "id": 645,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 644,
+                    "name": "ROUND",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 707,
+                    "src": "575:5:6"
+                  },
+                  "referencedDeclaration": 707,
+                  "src": "575:5:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_ROUND_$707",
+                    "typeString": "enum Meat.ROUND"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Part",
+            "nameLocation": "364:4:6",
+            "nodeType": "StructDefinition",
+            "scope": 719,
+            "src": "357:237:6",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Meat.CHUCK",
+            "id": 664,
+            "members": [
+              {
+                "id": 648,
+                "name": "Flat_Iron",
+                "nameLocation": "626:9:6",
+                "nodeType": "EnumValue",
+                "src": "626:9:6"
+              },
+              {
+                "id": 649,
+                "name": "Top_Blade_Steak",
+                "nameLocation": "645:15:6",
+                "nodeType": "EnumValue",
+                "src": "645:15:6"
+              },
+              {
+                "id": 650,
+                "name": "Chuck_Roast",
+                "nameLocation": "670:11:6",
+                "nodeType": "EnumValue",
+                "src": "670:11:6"
+              },
+              {
+                "id": 651,
+                "name": "Chuck_Arm_Roast",
+                "nameLocation": "691:15:6",
+                "nodeType": "EnumValue",
+                "src": "691:15:6"
+              },
+              {
+                "id": 652,
+                "name": "Mock_Tender_Steak",
+                "nameLocation": "716:17:6",
+                "nodeType": "EnumValue",
+                "src": "716:17:6"
+              },
+              {
+                "id": 653,
+                "name": "Mock_Tender",
+                "nameLocation": "743:11:6",
+                "nodeType": "EnumValue",
+                "src": "743:11:6"
+              },
+              {
+                "id": 654,
+                "name": "Clod_Heart",
+                "nameLocation": "764:10:6",
+                "nodeType": "EnumValue",
+                "src": "764:10:6"
+              },
+              {
+                "id": 655,
+                "name": "Ranch_Steak",
+                "nameLocation": "784:11:6",
+                "nodeType": "EnumValue",
+                "src": "784:11:6"
+              },
+              {
+                "id": 656,
+                "name": "Petite_Tender",
+                "nameLocation": "805:13:6",
+                "nodeType": "EnumValue",
+                "src": "805:13:6"
+              },
+              {
+                "id": 657,
+                "name": "Shoulder_Tender_Medallions",
+                "nameLocation": "828:26:6",
+                "nodeType": "EnumValue",
+                "src": "828:26:6"
+              },
+              {
+                "id": 658,
+                "name": "Cross_Rib_Roast",
+                "nameLocation": "864:15:6",
+                "nodeType": "EnumValue",
+                "src": "864:15:6"
+              },
+              {
+                "id": 659,
+                "name": "Sierra_Steak",
+                "nameLocation": "889:12:6",
+                "nodeType": "EnumValue",
+                "src": "889:12:6"
+              },
+              {
+                "id": 660,
+                "name": "Denver_Steak",
+                "nameLocation": "911:12:6",
+                "nodeType": "EnumValue",
+                "src": "911:12:6"
+              },
+              {
+                "id": 661,
+                "name": "Boneless_Country_Style_Ribs",
+                "nameLocation": "936:27:6",
+                "nodeType": "EnumValue",
+                "src": "936:27:6"
+              },
+              {
+                "id": 662,
+                "name": "Bone_In_Chuck_Short_Ribs",
+                "nameLocation": "973:24:6",
+                "nodeType": "EnumValue",
+                "src": "973:24:6"
+              },
+              {
+                "id": 663,
+                "name": "Chuck_Eye_Steak",
+                "nameLocation": "1007:15:6",
+                "nodeType": "EnumValue",
+                "src": "1007:15:6"
+              }
+            ],
+            "name": "CHUCK",
+            "nameLocation": "605:5:6",
+            "nodeType": "EnumDefinition",
+            "src": "600:429:6"
+          },
+          {
+            "canonicalName": "Meat.RIB",
+            "id": 674,
+            "members": [
+              {
+                "id": 665,
+                "name": "Ribeye",
+                "nameLocation": "1059:6:6",
+                "nodeType": "EnumValue",
+                "src": "1059:6:6"
+              },
+              {
+                "id": 666,
+                "name": "Bone_in_Rib_Roast",
+                "nameLocation": "1075:17:6",
+                "nodeType": "EnumValue",
+                "src": "1075:17:6"
+              },
+              {
+                "id": 667,
+                "name": "Rib_Filet",
+                "nameLocation": "1102:9:6",
+                "nodeType": "EnumValue",
+                "src": "1102:9:6"
+              },
+              {
+                "id": 668,
+                "name": "Ribeye_Roast",
+                "nameLocation": "1121:12:6",
+                "nodeType": "EnumValue",
+                "src": "1121:12:6"
+              },
+              {
+                "id": 669,
+                "name": "Cowboy_Steak",
+                "nameLocation": "1143:12:6",
+                "nodeType": "EnumValue",
+                "src": "1143:12:6"
+              },
+              {
+                "id": 670,
+                "name": "Bone_in_Ribeye",
+                "nameLocation": "1165:14:6",
+                "nodeType": "EnumValue",
+                "src": "1165:14:6"
+              },
+              {
+                "id": 671,
+                "name": "Bone_in_Plate_Short_Ribs",
+                "nameLocation": "1189:24:6",
+                "nodeType": "EnumValue",
+                "src": "1189:24:6"
+              },
+              {
+                "id": 672,
+                "name": "Back_Ribs",
+                "nameLocation": "1223:9:6",
+                "nodeType": "EnumValue",
+                "src": "1223:9:6"
+              },
+              {
+                "id": 673,
+                "name": "Chef_Cut_Ribeye",
+                "nameLocation": "1242:15:6",
+                "nodeType": "EnumValue",
+                "src": "1242:15:6"
+              }
+            ],
+            "name": "RIB",
+            "nameLocation": "1040:3:6",
+            "nodeType": "EnumDefinition",
+            "src": "1035:229:6"
+          },
+          {
+            "canonicalName": "Meat.SHORT_LOIN",
+            "id": 683,
+            "members": [
+              {
+                "id": 675,
+                "name": "Boneless_Strip_Steak",
+                "nameLocation": "1302:20:6",
+                "nodeType": "EnumValue",
+                "src": "1302:20:6"
+              },
+              {
+                "id": 676,
+                "name": "Strip_Filet",
+                "nameLocation": "1332:11:6",
+                "nodeType": "EnumValue",
+                "src": "1332:11:6"
+              },
+              {
+                "id": 677,
+                "name": "Strip_Roast",
+                "nameLocation": "1353:11:6",
+                "nodeType": "EnumValue",
+                "src": "1353:11:6"
+              },
+              {
+                "id": 678,
+                "name": "Tenderloin_Roast",
+                "nameLocation": "1374:16:6",
+                "nodeType": "EnumValue",
+                "src": "1374:16:6"
+              },
+              {
+                "id": 679,
+                "name": "T_Bone",
+                "nameLocation": "1400:6:6",
+                "nodeType": "EnumValue",
+                "src": "1400:6:6"
+              },
+              {
+                "id": 680,
+                "name": "Porterhouse",
+                "nameLocation": "1416:11:6",
+                "nodeType": "EnumValue",
+                "src": "1416:11:6"
+              },
+              {
+                "id": 681,
+                "name": "Filet_Mignon",
+                "nameLocation": "1437:12:6",
+                "nodeType": "EnumValue",
+                "src": "1437:12:6"
+              },
+              {
+                "id": 682,
+                "name": "Hanger_Steak",
+                "nameLocation": "1459:12:6",
+                "nodeType": "EnumValue",
+                "src": "1459:12:6"
+              }
+            ],
+            "name": "SHORT_LOIN",
+            "nameLocation": "1276:10:6",
+            "nodeType": "EnumDefinition",
+            "src": "1271:207:6"
+          },
+          {
+            "canonicalName": "Meat.SIR_LOIN",
+            "id": 693,
+            "members": [
+              {
+                "id": 684,
+                "name": "Center_Cut_Sirloin_Steak",
+                "nameLocation": "1514:24:6",
+                "nodeType": "EnumValue",
+                "src": "1514:24:6"
+              },
+              {
+                "id": 685,
+                "name": "Top_Sirloin_Steak",
+                "nameLocation": "1548:17:6",
+                "nodeType": "EnumValue",
+                "src": "1548:17:6"
+              },
+              {
+                "id": 686,
+                "name": "Coulotte_Steak",
+                "nameLocation": "1575:14:6",
+                "nodeType": "EnumValue",
+                "src": "1575:14:6"
+              },
+              {
+                "id": 687,
+                "name": "Sirloin_Filet",
+                "nameLocation": "1599:13:6",
+                "nodeType": "EnumValue",
+                "src": "1599:13:6"
+              },
+              {
+                "id": 688,
+                "name": "Tri_Tip_Steak",
+                "nameLocation": "1622:13:6",
+                "nodeType": "EnumValue",
+                "src": "1622:13:6"
+              },
+              {
+                "id": 689,
+                "name": "Tri_Tip",
+                "nameLocation": "1645:7:6",
+                "nodeType": "EnumValue",
+                "src": "1645:7:6"
+              },
+              {
+                "id": 690,
+                "name": "Ball_Tip_Steak",
+                "nameLocation": "1662:14:6",
+                "nodeType": "EnumValue",
+                "src": "1662:14:6"
+              },
+              {
+                "id": 691,
+                "name": "Ball_Tip",
+                "nameLocation": "1686:8:6",
+                "nodeType": "EnumValue",
+                "src": "1686:8:6"
+              },
+              {
+                "id": 692,
+                "name": "Sirloin_Flap",
+                "nameLocation": "1704:12:6",
+                "nodeType": "EnumValue",
+                "src": "1704:12:6"
+              }
+            ],
+            "name": "SIR_LOIN",
+            "nameLocation": "1490:8:6",
+            "nodeType": "EnumDefinition",
+            "src": "1485:238:6"
+          },
+          {
+            "canonicalName": "Meat.ROUND",
+            "id": 707,
+            "members": [
+              {
+                "id": 694,
+                "name": "Rump_Roast",
+                "nameLocation": "1754:10:6",
+                "nodeType": "EnumValue",
+                "src": "1754:10:6"
+              },
+              {
+                "id": 695,
+                "name": "Top_Round_London_Broil",
+                "nameLocation": "1774:22:6",
+                "nodeType": "EnumValue",
+                "src": "1774:22:6"
+              },
+              {
+                "id": 696,
+                "name": "Top_Round_Roast",
+                "nameLocation": "1806:15:6",
+                "nodeType": "EnumValue",
+                "src": "1806:15:6"
+              },
+              {
+                "id": 697,
+                "name": "Top_Round_Steak",
+                "nameLocation": "1831:15:6",
+                "nodeType": "EnumValue",
+                "src": "1831:15:6"
+              },
+              {
+                "id": 698,
+                "name": "Bottom_Round_Steak",
+                "nameLocation": "1856:18:6",
+                "nodeType": "EnumValue",
+                "src": "1856:18:6"
+              },
+              {
+                "id": 699,
+                "name": "Bottom_Round_London_Broil",
+                "nameLocation": "1884:25:6",
+                "nodeType": "EnumValue",
+                "src": "1884:25:6"
+              },
+              {
+                "id": 700,
+                "name": "Bottom_Round_Roast",
+                "nameLocation": "1919:18:6",
+                "nodeType": "EnumValue",
+                "src": "1919:18:6"
+              },
+              {
+                "id": 701,
+                "name": "Eye_of_Round_Roast",
+                "nameLocation": "1947:18:6",
+                "nodeType": "EnumValue",
+                "src": "1947:18:6"
+              },
+              {
+                "id": 702,
+                "name": "Eye_of_Round_Steak",
+                "nameLocation": "1975:18:6",
+                "nodeType": "EnumValue",
+                "src": "1975:18:6"
+              },
+              {
+                "id": 703,
+                "name": "Sirloin_Tip_Center_Roast",
+                "nameLocation": "2003:24:6",
+                "nodeType": "EnumValue",
+                "src": "2003:24:6"
+              },
+              {
+                "id": 704,
+                "name": "Sirloin_Tip_Center_Steak",
+                "nameLocation": "2037:24:6",
+                "nodeType": "EnumValue",
+                "src": "2037:24:6"
+              },
+              {
+                "id": 705,
+                "name": "Sirloin_Tip_Side_Steak",
+                "nameLocation": "2071:22:6",
+                "nodeType": "EnumValue",
+                "src": "2071:22:6"
+              },
+              {
+                "id": 706,
+                "name": "Butterfly_Top_Round_Steak",
+                "nameLocation": "2103:25:6",
+                "nodeType": "EnumValue",
+                "src": "2103:25:6"
+              }
+            ],
+            "name": "ROUND",
+            "nameLocation": "1734:5:6",
+            "nodeType": "EnumDefinition",
+            "src": "1729:406:6"
+          },
+          {
+            "canonicalName": "Meat.FLANK",
+            "id": 709,
+            "members": [
+              {
+                "id": 708,
+                "name": "flank",
+                "nameLocation": "2166:5:6",
+                "nodeType": "EnumValue",
+                "src": "2166:5:6"
+              }
+            ],
+            "name": "FLANK",
+            "nameLocation": "2146:5:6",
+            "nodeType": "EnumDefinition",
+            "src": "2141:36:6"
+          },
+          {
+            "canonicalName": "Meat.PLATE",
+            "id": 712,
+            "members": [
+              {
+                "id": 710,
+                "name": "Short_Ribs",
+                "nameLocation": "2207:10:6",
+                "nodeType": "EnumValue",
+                "src": "2207:10:6"
+              },
+              {
+                "id": 711,
+                "name": "Inside_Skirt",
+                "nameLocation": "2227:12:6",
+                "nodeType": "EnumValue",
+                "src": "2227:12:6"
+              }
+            ],
+            "name": "PLATE",
+            "nameLocation": "2187:5:6",
+            "nodeType": "EnumDefinition",
+            "src": "2182:63:6"
+          },
+          {
+            "canonicalName": "Meat.BRISKET",
+            "id": 716,
+            "members": [
+              {
+                "id": 713,
+                "name": "Whole_Brisket",
+                "nameLocation": "2278:13:6",
+                "nodeType": "EnumValue",
+                "src": "2278:13:6"
+              },
+              {
+                "id": 714,
+                "name": "Brisket_Flat",
+                "nameLocation": "2301:12:6",
+                "nodeType": "EnumValue",
+                "src": "2301:12:6"
+              },
+              {
+                "id": 715,
+                "name": "Brisket_Point",
+                "nameLocation": "2323:13:6",
+                "nodeType": "EnumValue",
+                "src": "2323:13:6"
+              }
+            ],
+            "name": "BRISKET",
+            "nameLocation": "2256:7:6",
+            "nodeType": "EnumDefinition",
+            "src": "2251:91:6"
+          },
+          {
+            "canonicalName": "Meat.SHANK",
+            "id": 718,
+            "members": [
+              {
+                "id": 717,
+                "name": "Shank_Cross_Cut",
+                "nameLocation": "2373:15:6",
+                "nodeType": "EnumValue",
+                "src": "2373:15:6"
+              }
+            ],
+            "name": "SHANK",
+            "nameLocation": "2353:5:6",
+            "nodeType": "EnumDefinition",
+            "src": "2348:46:6"
+          }
+        ],
+        "scope": 720,
+        "src": "66:2335:6",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:2369:6"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/contracts/SupplyChain/Meat.sol",
+    "exportedSymbols": {
+      "Meat": [
+        719
+      ]
+    },
+    "id": 720,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 598,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:32:6"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Meat",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 719,
+        "linearizedBaseContracts": [
+          719
+        ],
+        "name": "Meat",
+        "nameLocation": "75:4:6",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Meat.meat",
+            "id": 608,
+            "members": [
+              {
+                "constant": false,
+                "id": 601,
+                "mutability": "mutable",
+                "name": "source",
+                "nameLocation": "120:6:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 608,
+                "src": "113:13:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_Animal_$616",
+                  "typeString": "enum Meat.Animal"
+                },
+                "typeName": {
+                  "id": 600,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 599,
+                    "name": "Animal",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 616,
+                    "src": "113:6:6"
+                  },
+                  "referencedDeclaration": 616,
+                  "src": "113:6:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Animal_$616",
+                    "typeString": "enum Meat.Animal"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 604,
+                "mutability": "mutable",
+                "name": "fodder",
+                "nameLocation": "141:6:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 608,
+                "src": "134:13:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_Fodder_$619",
+                  "typeString": "enum Meat.Fodder"
+                },
+                "typeName": {
+                  "id": 603,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 602,
+                    "name": "Fodder",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 619,
+                    "src": "134:6:6"
+                  },
+                  "referencedDeclaration": 619,
+                  "src": "134:6:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Fodder_$619",
+                    "typeString": "enum Meat.Fodder"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 607,
+                "mutability": "mutable",
+                "name": "part",
+                "nameLocation": "160:4:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 608,
+                "src": "155:9:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Part_$647_storage_ptr",
+                  "typeString": "struct Meat.Part"
+                },
+                "typeName": {
+                  "id": 606,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 605,
+                    "name": "Part",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 647,
+                    "src": "155:4:6"
+                  },
+                  "referencedDeclaration": 647,
+                  "src": "155:4:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Part_$647_storage_ptr",
+                    "typeString": "struct Meat.Part"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "meat",
+            "nameLocation": "96:4:6",
+            "nodeType": "StructDefinition",
+            "scope": 719,
+            "src": "89:86:6",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Meat.Animal",
+            "id": 616,
+            "members": [
+              {
+                "id": 609,
+                "name": "Beef",
+                "nameLocation": "205:4:6",
+                "nodeType": "EnumValue",
+                "src": "205:4:6"
+              },
+              {
+                "id": 610,
+                "name": "Lamb",
+                "nameLocation": "216:4:6",
+                "nodeType": "EnumValue",
+                "src": "216:4:6"
+              },
+              {
+                "id": 611,
+                "name": "pork",
+                "nameLocation": "227:4:6",
+                "nodeType": "EnumValue",
+                "src": "227:4:6"
+              },
+              {
+                "id": 612,
+                "name": "veal",
+                "nameLocation": "238:4:6",
+                "nodeType": "EnumValue",
+                "src": "238:4:6"
+              },
+              {
+                "id": 613,
+                "name": "goat",
+                "nameLocation": "249:4:6",
+                "nodeType": "EnumValue",
+                "src": "249:4:6"
+              },
+              {
+                "id": 614,
+                "name": "wagyu",
+                "nameLocation": "260:5:6",
+                "nodeType": "EnumValue",
+                "src": "260:5:6"
+              },
+              {
+                "id": 615,
+                "name": "sheep",
+                "nameLocation": "272:5:6",
+                "nodeType": "EnumValue",
+                "src": "272:5:6"
+              }
+            ],
+            "name": "Animal",
+            "nameLocation": "187:6:6",
+            "nodeType": "EnumDefinition",
+            "src": "182:101:6"
+          },
+          {
+            "canonicalName": "Meat.Fodder",
+            "id": 619,
+            "members": [
+              {
+                "id": 617,
+                "name": "Grassfed",
+                "nameLocation": "316:8:6",
+                "nodeType": "EnumValue",
+                "src": "316:8:6"
+              },
+              {
+                "id": 618,
+                "name": "Grainfed",
+                "nameLocation": "332:8:6",
+                "nodeType": "EnumValue",
+                "src": "332:8:6"
+              }
+            ],
+            "name": "Fodder",
+            "nameLocation": "297:6:6",
+            "nodeType": "EnumDefinition",
+            "src": "292:54:6"
+          },
+          {
+            "canonicalName": "Meat.Part",
+            "id": 647,
+            "members": [
+              {
+                "constant": false,
+                "id": 622,
+                "mutability": "mutable",
+                "name": "chuck",
+                "nameLocation": "391:5:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 647,
+                "src": "385:11:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_CHUCK_$664",
+                  "typeString": "enum Meat.CHUCK"
+                },
+                "typeName": {
+                  "id": 621,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 620,
+                    "name": "CHUCK",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 664,
+                    "src": "385:5:6"
+                  },
+                  "referencedDeclaration": 664,
+                  "src": "385:5:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_CHUCK_$664",
+                    "typeString": "enum Meat.CHUCK"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 625,
+                "mutability": "mutable",
+                "name": "brisket",
+                "nameLocation": "415:7:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 647,
+                "src": "407:15:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_BRISKET_$716",
+                  "typeString": "enum Meat.BRISKET"
+                },
+                "typeName": {
+                  "id": 624,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 623,
+                    "name": "BRISKET",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 716,
+                    "src": "407:7:6"
+                  },
+                  "referencedDeclaration": 716,
+                  "src": "407:7:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_BRISKET_$716",
+                    "typeString": "enum Meat.BRISKET"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 628,
+                "mutability": "mutable",
+                "name": "shank",
+                "nameLocation": "439:5:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 647,
+                "src": "433:11:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_SHANK_$718",
+                  "typeString": "enum Meat.SHANK"
+                },
+                "typeName": {
+                  "id": 627,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 626,
+                    "name": "SHANK",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 718,
+                    "src": "433:5:6"
+                  },
+                  "referencedDeclaration": 718,
+                  "src": "433:5:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_SHANK_$718",
+                    "typeString": "enum Meat.SHANK"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 631,
+                "mutability": "mutable",
+                "name": "rib",
+                "nameLocation": "459:3:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 647,
+                "src": "455:7:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_RIB_$674",
+                  "typeString": "enum Meat.RIB"
+                },
+                "typeName": {
+                  "id": 630,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 629,
+                    "name": "RIB",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 674,
+                    "src": "455:3:6"
+                  },
+                  "referencedDeclaration": 674,
+                  "src": "455:3:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_RIB_$674",
+                    "typeString": "enum Meat.RIB"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 634,
+                "mutability": "mutable",
+                "name": "plate",
+                "nameLocation": "479:5:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 647,
+                "src": "473:11:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_PLATE_$712",
+                  "typeString": "enum Meat.PLATE"
+                },
+                "typeName": {
+                  "id": 633,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 632,
+                    "name": "PLATE",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 712,
+                    "src": "473:5:6"
+                  },
+                  "referencedDeclaration": 712,
+                  "src": "473:5:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_PLATE_$712",
+                    "typeString": "enum Meat.PLATE"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 637,
+                "mutability": "mutable",
+                "name": "shortLoin",
+                "nameLocation": "506:9:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 647,
+                "src": "495:20:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_SHORT_LOIN_$683",
+                  "typeString": "enum Meat.SHORT_LOIN"
+                },
+                "typeName": {
+                  "id": 636,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 635,
+                    "name": "SHORT_LOIN",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 683,
+                    "src": "495:10:6"
+                  },
+                  "referencedDeclaration": 683,
+                  "src": "495:10:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_SHORT_LOIN_$683",
+                    "typeString": "enum Meat.SHORT_LOIN"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 640,
+                "mutability": "mutable",
+                "name": "sirLoin",
+                "nameLocation": "535:7:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 647,
+                "src": "526:16:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_SIR_LOIN_$693",
+                  "typeString": "enum Meat.SIR_LOIN"
+                },
+                "typeName": {
+                  "id": 639,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 638,
+                    "name": "SIR_LOIN",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 693,
+                    "src": "526:8:6"
+                  },
+                  "referencedDeclaration": 693,
+                  "src": "526:8:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_SIR_LOIN_$693",
+                    "typeString": "enum Meat.SIR_LOIN"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 643,
+                "mutability": "mutable",
+                "name": "flank",
+                "nameLocation": "559:5:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 647,
+                "src": "553:11:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_FLANK_$709",
+                  "typeString": "enum Meat.FLANK"
+                },
+                "typeName": {
+                  "id": 642,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 641,
+                    "name": "FLANK",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 709,
+                    "src": "553:5:6"
+                  },
+                  "referencedDeclaration": 709,
+                  "src": "553:5:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_FLANK_$709",
+                    "typeString": "enum Meat.FLANK"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 646,
+                "mutability": "mutable",
+                "name": "round",
+                "nameLocation": "581:5:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 647,
+                "src": "575:11:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_ROUND_$707",
+                  "typeString": "enum Meat.ROUND"
+                },
+                "typeName": {
+                  "id": 645,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 644,
+                    "name": "ROUND",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 707,
+                    "src": "575:5:6"
+                  },
+                  "referencedDeclaration": 707,
+                  "src": "575:5:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_ROUND_$707",
+                    "typeString": "enum Meat.ROUND"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Part",
+            "nameLocation": "364:4:6",
+            "nodeType": "StructDefinition",
+            "scope": 719,
+            "src": "357:237:6",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Meat.CHUCK",
+            "id": 664,
+            "members": [
+              {
+                "id": 648,
+                "name": "Flat_Iron",
+                "nameLocation": "626:9:6",
+                "nodeType": "EnumValue",
+                "src": "626:9:6"
+              },
+              {
+                "id": 649,
+                "name": "Top_Blade_Steak",
+                "nameLocation": "645:15:6",
+                "nodeType": "EnumValue",
+                "src": "645:15:6"
+              },
+              {
+                "id": 650,
+                "name": "Chuck_Roast",
+                "nameLocation": "670:11:6",
+                "nodeType": "EnumValue",
+                "src": "670:11:6"
+              },
+              {
+                "id": 651,
+                "name": "Chuck_Arm_Roast",
+                "nameLocation": "691:15:6",
+                "nodeType": "EnumValue",
+                "src": "691:15:6"
+              },
+              {
+                "id": 652,
+                "name": "Mock_Tender_Steak",
+                "nameLocation": "716:17:6",
+                "nodeType": "EnumValue",
+                "src": "716:17:6"
+              },
+              {
+                "id": 653,
+                "name": "Mock_Tender",
+                "nameLocation": "743:11:6",
+                "nodeType": "EnumValue",
+                "src": "743:11:6"
+              },
+              {
+                "id": 654,
+                "name": "Clod_Heart",
+                "nameLocation": "764:10:6",
+                "nodeType": "EnumValue",
+                "src": "764:10:6"
+              },
+              {
+                "id": 655,
+                "name": "Ranch_Steak",
+                "nameLocation": "784:11:6",
+                "nodeType": "EnumValue",
+                "src": "784:11:6"
+              },
+              {
+                "id": 656,
+                "name": "Petite_Tender",
+                "nameLocation": "805:13:6",
+                "nodeType": "EnumValue",
+                "src": "805:13:6"
+              },
+              {
+                "id": 657,
+                "name": "Shoulder_Tender_Medallions",
+                "nameLocation": "828:26:6",
+                "nodeType": "EnumValue",
+                "src": "828:26:6"
+              },
+              {
+                "id": 658,
+                "name": "Cross_Rib_Roast",
+                "nameLocation": "864:15:6",
+                "nodeType": "EnumValue",
+                "src": "864:15:6"
+              },
+              {
+                "id": 659,
+                "name": "Sierra_Steak",
+                "nameLocation": "889:12:6",
+                "nodeType": "EnumValue",
+                "src": "889:12:6"
+              },
+              {
+                "id": 660,
+                "name": "Denver_Steak",
+                "nameLocation": "911:12:6",
+                "nodeType": "EnumValue",
+                "src": "911:12:6"
+              },
+              {
+                "id": 661,
+                "name": "Boneless_Country_Style_Ribs",
+                "nameLocation": "936:27:6",
+                "nodeType": "EnumValue",
+                "src": "936:27:6"
+              },
+              {
+                "id": 662,
+                "name": "Bone_In_Chuck_Short_Ribs",
+                "nameLocation": "973:24:6",
+                "nodeType": "EnumValue",
+                "src": "973:24:6"
+              },
+              {
+                "id": 663,
+                "name": "Chuck_Eye_Steak",
+                "nameLocation": "1007:15:6",
+                "nodeType": "EnumValue",
+                "src": "1007:15:6"
+              }
+            ],
+            "name": "CHUCK",
+            "nameLocation": "605:5:6",
+            "nodeType": "EnumDefinition",
+            "src": "600:429:6"
+          },
+          {
+            "canonicalName": "Meat.RIB",
+            "id": 674,
+            "members": [
+              {
+                "id": 665,
+                "name": "Ribeye",
+                "nameLocation": "1059:6:6",
+                "nodeType": "EnumValue",
+                "src": "1059:6:6"
+              },
+              {
+                "id": 666,
+                "name": "Bone_in_Rib_Roast",
+                "nameLocation": "1075:17:6",
+                "nodeType": "EnumValue",
+                "src": "1075:17:6"
+              },
+              {
+                "id": 667,
+                "name": "Rib_Filet",
+                "nameLocation": "1102:9:6",
+                "nodeType": "EnumValue",
+                "src": "1102:9:6"
+              },
+              {
+                "id": 668,
+                "name": "Ribeye_Roast",
+                "nameLocation": "1121:12:6",
+                "nodeType": "EnumValue",
+                "src": "1121:12:6"
+              },
+              {
+                "id": 669,
+                "name": "Cowboy_Steak",
+                "nameLocation": "1143:12:6",
+                "nodeType": "EnumValue",
+                "src": "1143:12:6"
+              },
+              {
+                "id": 670,
+                "name": "Bone_in_Ribeye",
+                "nameLocation": "1165:14:6",
+                "nodeType": "EnumValue",
+                "src": "1165:14:6"
+              },
+              {
+                "id": 671,
+                "name": "Bone_in_Plate_Short_Ribs",
+                "nameLocation": "1189:24:6",
+                "nodeType": "EnumValue",
+                "src": "1189:24:6"
+              },
+              {
+                "id": 672,
+                "name": "Back_Ribs",
+                "nameLocation": "1223:9:6",
+                "nodeType": "EnumValue",
+                "src": "1223:9:6"
+              },
+              {
+                "id": 673,
+                "name": "Chef_Cut_Ribeye",
+                "nameLocation": "1242:15:6",
+                "nodeType": "EnumValue",
+                "src": "1242:15:6"
+              }
+            ],
+            "name": "RIB",
+            "nameLocation": "1040:3:6",
+            "nodeType": "EnumDefinition",
+            "src": "1035:229:6"
+          },
+          {
+            "canonicalName": "Meat.SHORT_LOIN",
+            "id": 683,
+            "members": [
+              {
+                "id": 675,
+                "name": "Boneless_Strip_Steak",
+                "nameLocation": "1302:20:6",
+                "nodeType": "EnumValue",
+                "src": "1302:20:6"
+              },
+              {
+                "id": 676,
+                "name": "Strip_Filet",
+                "nameLocation": "1332:11:6",
+                "nodeType": "EnumValue",
+                "src": "1332:11:6"
+              },
+              {
+                "id": 677,
+                "name": "Strip_Roast",
+                "nameLocation": "1353:11:6",
+                "nodeType": "EnumValue",
+                "src": "1353:11:6"
+              },
+              {
+                "id": 678,
+                "name": "Tenderloin_Roast",
+                "nameLocation": "1374:16:6",
+                "nodeType": "EnumValue",
+                "src": "1374:16:6"
+              },
+              {
+                "id": 679,
+                "name": "T_Bone",
+                "nameLocation": "1400:6:6",
+                "nodeType": "EnumValue",
+                "src": "1400:6:6"
+              },
+              {
+                "id": 680,
+                "name": "Porterhouse",
+                "nameLocation": "1416:11:6",
+                "nodeType": "EnumValue",
+                "src": "1416:11:6"
+              },
+              {
+                "id": 681,
+                "name": "Filet_Mignon",
+                "nameLocation": "1437:12:6",
+                "nodeType": "EnumValue",
+                "src": "1437:12:6"
+              },
+              {
+                "id": 682,
+                "name": "Hanger_Steak",
+                "nameLocation": "1459:12:6",
+                "nodeType": "EnumValue",
+                "src": "1459:12:6"
+              }
+            ],
+            "name": "SHORT_LOIN",
+            "nameLocation": "1276:10:6",
+            "nodeType": "EnumDefinition",
+            "src": "1271:207:6"
+          },
+          {
+            "canonicalName": "Meat.SIR_LOIN",
+            "id": 693,
+            "members": [
+              {
+                "id": 684,
+                "name": "Center_Cut_Sirloin_Steak",
+                "nameLocation": "1514:24:6",
+                "nodeType": "EnumValue",
+                "src": "1514:24:6"
+              },
+              {
+                "id": 685,
+                "name": "Top_Sirloin_Steak",
+                "nameLocation": "1548:17:6",
+                "nodeType": "EnumValue",
+                "src": "1548:17:6"
+              },
+              {
+                "id": 686,
+                "name": "Coulotte_Steak",
+                "nameLocation": "1575:14:6",
+                "nodeType": "EnumValue",
+                "src": "1575:14:6"
+              },
+              {
+                "id": 687,
+                "name": "Sirloin_Filet",
+                "nameLocation": "1599:13:6",
+                "nodeType": "EnumValue",
+                "src": "1599:13:6"
+              },
+              {
+                "id": 688,
+                "name": "Tri_Tip_Steak",
+                "nameLocation": "1622:13:6",
+                "nodeType": "EnumValue",
+                "src": "1622:13:6"
+              },
+              {
+                "id": 689,
+                "name": "Tri_Tip",
+                "nameLocation": "1645:7:6",
+                "nodeType": "EnumValue",
+                "src": "1645:7:6"
+              },
+              {
+                "id": 690,
+                "name": "Ball_Tip_Steak",
+                "nameLocation": "1662:14:6",
+                "nodeType": "EnumValue",
+                "src": "1662:14:6"
+              },
+              {
+                "id": 691,
+                "name": "Ball_Tip",
+                "nameLocation": "1686:8:6",
+                "nodeType": "EnumValue",
+                "src": "1686:8:6"
+              },
+              {
+                "id": 692,
+                "name": "Sirloin_Flap",
+                "nameLocation": "1704:12:6",
+                "nodeType": "EnumValue",
+                "src": "1704:12:6"
+              }
+            ],
+            "name": "SIR_LOIN",
+            "nameLocation": "1490:8:6",
+            "nodeType": "EnumDefinition",
+            "src": "1485:238:6"
+          },
+          {
+            "canonicalName": "Meat.ROUND",
+            "id": 707,
+            "members": [
+              {
+                "id": 694,
+                "name": "Rump_Roast",
+                "nameLocation": "1754:10:6",
+                "nodeType": "EnumValue",
+                "src": "1754:10:6"
+              },
+              {
+                "id": 695,
+                "name": "Top_Round_London_Broil",
+                "nameLocation": "1774:22:6",
+                "nodeType": "EnumValue",
+                "src": "1774:22:6"
+              },
+              {
+                "id": 696,
+                "name": "Top_Round_Roast",
+                "nameLocation": "1806:15:6",
+                "nodeType": "EnumValue",
+                "src": "1806:15:6"
+              },
+              {
+                "id": 697,
+                "name": "Top_Round_Steak",
+                "nameLocation": "1831:15:6",
+                "nodeType": "EnumValue",
+                "src": "1831:15:6"
+              },
+              {
+                "id": 698,
+                "name": "Bottom_Round_Steak",
+                "nameLocation": "1856:18:6",
+                "nodeType": "EnumValue",
+                "src": "1856:18:6"
+              },
+              {
+                "id": 699,
+                "name": "Bottom_Round_London_Broil",
+                "nameLocation": "1884:25:6",
+                "nodeType": "EnumValue",
+                "src": "1884:25:6"
+              },
+              {
+                "id": 700,
+                "name": "Bottom_Round_Roast",
+                "nameLocation": "1919:18:6",
+                "nodeType": "EnumValue",
+                "src": "1919:18:6"
+              },
+              {
+                "id": 701,
+                "name": "Eye_of_Round_Roast",
+                "nameLocation": "1947:18:6",
+                "nodeType": "EnumValue",
+                "src": "1947:18:6"
+              },
+              {
+                "id": 702,
+                "name": "Eye_of_Round_Steak",
+                "nameLocation": "1975:18:6",
+                "nodeType": "EnumValue",
+                "src": "1975:18:6"
+              },
+              {
+                "id": 703,
+                "name": "Sirloin_Tip_Center_Roast",
+                "nameLocation": "2003:24:6",
+                "nodeType": "EnumValue",
+                "src": "2003:24:6"
+              },
+              {
+                "id": 704,
+                "name": "Sirloin_Tip_Center_Steak",
+                "nameLocation": "2037:24:6",
+                "nodeType": "EnumValue",
+                "src": "2037:24:6"
+              },
+              {
+                "id": 705,
+                "name": "Sirloin_Tip_Side_Steak",
+                "nameLocation": "2071:22:6",
+                "nodeType": "EnumValue",
+                "src": "2071:22:6"
+              },
+              {
+                "id": 706,
+                "name": "Butterfly_Top_Round_Steak",
+                "nameLocation": "2103:25:6",
+                "nodeType": "EnumValue",
+                "src": "2103:25:6"
+              }
+            ],
+            "name": "ROUND",
+            "nameLocation": "1734:5:6",
+            "nodeType": "EnumDefinition",
+            "src": "1729:406:6"
+          },
+          {
+            "canonicalName": "Meat.FLANK",
+            "id": 709,
+            "members": [
+              {
+                "id": 708,
+                "name": "flank",
+                "nameLocation": "2166:5:6",
+                "nodeType": "EnumValue",
+                "src": "2166:5:6"
+              }
+            ],
+            "name": "FLANK",
+            "nameLocation": "2146:5:6",
+            "nodeType": "EnumDefinition",
+            "src": "2141:36:6"
+          },
+          {
+            "canonicalName": "Meat.PLATE",
+            "id": 712,
+            "members": [
+              {
+                "id": 710,
+                "name": "Short_Ribs",
+                "nameLocation": "2207:10:6",
+                "nodeType": "EnumValue",
+                "src": "2207:10:6"
+              },
+              {
+                "id": 711,
+                "name": "Inside_Skirt",
+                "nameLocation": "2227:12:6",
+                "nodeType": "EnumValue",
+                "src": "2227:12:6"
+              }
+            ],
+            "name": "PLATE",
+            "nameLocation": "2187:5:6",
+            "nodeType": "EnumDefinition",
+            "src": "2182:63:6"
+          },
+          {
+            "canonicalName": "Meat.BRISKET",
+            "id": 716,
+            "members": [
+              {
+                "id": 713,
+                "name": "Whole_Brisket",
+                "nameLocation": "2278:13:6",
+                "nodeType": "EnumValue",
+                "src": "2278:13:6"
+              },
+              {
+                "id": 714,
+                "name": "Brisket_Flat",
+                "nameLocation": "2301:12:6",
+                "nodeType": "EnumValue",
+                "src": "2301:12:6"
+              },
+              {
+                "id": 715,
+                "name": "Brisket_Point",
+                "nameLocation": "2323:13:6",
+                "nodeType": "EnumValue",
+                "src": "2323:13:6"
+              }
+            ],
+            "name": "BRISKET",
+            "nameLocation": "2256:7:6",
+            "nodeType": "EnumDefinition",
+            "src": "2251:91:6"
+          },
+          {
+            "canonicalName": "Meat.SHANK",
+            "id": 718,
+            "members": [
+              {
+                "id": 717,
+                "name": "Shank_Cross_Cut",
+                "nameLocation": "2373:15:6",
+                "nodeType": "EnumValue",
+                "src": "2373:15:6"
+              }
+            ],
+            "name": "SHANK",
+            "nameLocation": "2353:5:6",
+            "nodeType": "EnumDefinition",
+            "src": "2348:46:6"
+          }
+        ],
+        "scope": 720,
+        "src": "66:2335:6",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:2369:6"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.12+commit.f00d7308.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.5",
+  "updatedAt": "2022-04-25T12:59:29.922Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

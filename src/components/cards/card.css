@@ -1,0 +1,36 @@
+.example body{
+    background:radial-gradient(#e5e5e5,#ffff,#e5e5e5);
+}
+
+.example .card
+{
+    width:25rem;
+}
+.example .card:hover{
+    box-shadow:5px 10px 20px 1px rgba(0,0,0,0.253)!important;
+}
+
+.example .card-body
+{
+    padding:3rem 0 !important;
+}
+.example .card-text{
+    font-size: .9rem;
+    padding:0.4rem 1.9rem;
+}
+.example .container-fluid .row
+{
+    padding-top:6rem;
+}
+.example .overflow
+{
+    padding-top:20px;
+    padding-right:20px;
+    padding-left:20px;
+
+    padding-bottom: 0px;
+}
+.example .img
+{
+    height:240px;
+}
